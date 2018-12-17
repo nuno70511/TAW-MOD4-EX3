@@ -22,8 +22,16 @@ tellFortune("filho3", "parceiro3", "loc3", "prof3");
 /* 03. */
 
 var c = 30;
-var f = function celsiusToFahrenheit(c){
+var fahrenheit = function celsiusToFahrenheit(c){
     return (c * (9/5) + 32);
 }
 
-console.log (c + "°C é " + f(c) + "°F");
+console.log (c + "°C é " + fahrenheit(c) + "°F");
+
+
+var f = 86;
+var celsius = function fahrenheitToCelsius(f){
+    return ((f - 32) * (5/9));
+}
+
+console.log (f + "°F é " + celsius(f) + "°C");
